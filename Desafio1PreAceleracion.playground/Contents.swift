@@ -6,7 +6,7 @@ typealias Direccion = (
     ciudad: String,
     partido: String,
     provincia: String,
-    calle: [String: String], // Ejercicio 2,
+    calle: [String: Any], // Ejercicio 2,
     pais: String,
     codigoPostal: Int,
     piso: Int?,
@@ -69,9 +69,9 @@ let direccion3: Direccion = (
 
 func obtenerDireccion(direccion: Direccion) {
     print("""
-        Ciudad: \(direccion.ciudad) \n
-        Calle: \(direccion.calle["nombreDeCalle"]!) \(direccion.calle["numero"]!)\n
-        Codigo Postal: \(direccion.codigoPostal)
+    Ciudad: \(direccion.ciudad)
+    Calle: \(direccion.calle["nombreDeCalle"]!) \(direccion.calle["numero"]!)
+    Codigo Postal: \(direccion.codigoPostal)
     """)
 }
 
